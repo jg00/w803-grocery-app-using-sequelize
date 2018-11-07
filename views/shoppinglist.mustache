@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping List</title>
+</head>
+<body>
+    
+    <div>
+        <h4>Menu</h4>
+        <a href="/shoppinglist/add"><button>Create Shopping List</button></a>
+    </div>
+
+    <div>
+        <h4>Display A Shopping List</h4>
+        <div>
+            {{#shoppingList}}
+                <p>
+                    <div>{{id}} {{name}}</div>
+                    <div>Street: {{street}}</div>
+                    <div>City: {{city}}</div>
+                    <div>State: {{state}}</div>
+                    <div>
+                        <br><a href="/shoppinglist/remove/{{id}}"><button>Remove Shopping List</button></a>
+                    </div>
+                </p>
+            {{/shoppingList}}
+        </div>
+    </div>
+
+
+</body>
+</html>

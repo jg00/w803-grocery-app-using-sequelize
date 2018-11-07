@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create A Shopping List</title>
+</head>
+<body>
+
+    <div>
+        <h4>Menu</h4>
+        <a href="/shoppinglist"><button>Return to Shopping List</button></a>
+    </div>
+
+    <div>
+        <h4>Create A Shopping List</h4>
+        <form action="/shoppinglist/add" method="POST">
+            <input type="text" name="name" placeholder="Name"><br>
+            <input type="text" name="street" placeholder="Street"><br>
+            <input type="text" name="city" placeholder="Enter City"><br>
+            <input type="text" name="state" placeholder="Enter State"><br>
+            <div>
+                <br><input type="submit" value="Add Shopping List">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

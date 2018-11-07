@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Remove Shopping List Selected</title>
+</head>
+<body>
+    
+    <div>
+        <h4>Menu</h4>
+        <a href="/shoppinglist"><button>Return to Shopping List</button></a>
+    </div>
+
+    <div>
+        <h4>Are You Sure You Want To Delete The Shopping List?</h4>
+        <div>
+            {{#shoppingList}}
+            <form action="/shoppinglist/remove/{{id}}" method="POST">
+                <input type="text" name="name" value="{{name}} ({{id}})"><br>
+                <input type="text" name="street" value="{{street}}"><br>
+                <input type="text" name="city" value="{{city}}"><br>
+                <input type="text" name="state" value="{{state}}"><br>
+                <div>
+                    <br><input type="submit" value="Confirm">
+                </div>
+            </form>
+            {{/shoppingList}}
+        </div>
+    </div>
+
+</body>
+</html>
